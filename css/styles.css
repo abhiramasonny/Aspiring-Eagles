@@ -10950,7 +10950,7 @@ header.masthead{
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/008/935/681/non_2x/abstract-banner-web-header-blue-laser-line-curved-with-sparkle-lighting-on-dark-blue-space-background-vector.jpg"); /* change with actual background of students!*/
+  background-image: url("../assets/img/header-bg.jpg"); /* change with actual background of students!*/
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

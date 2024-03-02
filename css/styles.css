@@ -10943,7 +10943,7 @@ p {
     margin-right: 0;
   }
 }
-/*make it so that this is slightly dimmed*/
+/*make it so that this is slightly dimmed and mobile resposive*/
 header.masthead{
   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 10.5rem;
@@ -10955,8 +10955,34 @@ header.masthead{
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-
+  position: relative;
+  z-index: 1;
+  @media (max-width: 768px) {
+    padding-top: 8rem;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  @media (max-width: 576px) {
+    padding-top: 8rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @media (max-width: 480px) {
+    padding-top: 10rem;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  @media (max-width: 400px) {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+  @media (max-width: 350px) {
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+  }
+  
 }
+
 
 header.masthead .masthead-subheading {
   font-size: 1.5rem;

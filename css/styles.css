@@ -10957,6 +10957,7 @@ header.masthead{
   background-size: cover;
   position: relative;
   z-index: 1;
+  
   @media (max-width: 768px) {
     padding-top: 8rem;
     margin-top: 4rem;

@@ -11350,3 +11350,34 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+.thingii {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.grouppic {
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+  background-image: url('../assets/img/grouppic.jpeg');
+  background-size: cover;
+}
+
+.grouppic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/img/funnypic.jpg');
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.grouppic:hover::before {
+  opacity: 1;
+}

@@ -11362,7 +11362,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 50vw;
   height: 50vh;
   background-image: url('../assets/img/grouppic.jpeg');
-  background-size: cover;
+  background-size: contain; /* Adjusted to contain */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center; /* Center the background */
+  opacity: 1; /* Set initial opacity to 1 */
+  transition: opacity 0.4s ease-in-out; /* Apply transition effect */
 }
 
 .grouppic::before {
@@ -11374,10 +11378,17 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 100%;
   background-image: url('../assets/img/funnypic.jpg');
   background-size: cover;
+  background-size: contain; /* Adjusted to contain */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center; /* Center the background */
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
 
 .grouppic:hover::before {
   opacity: 1;
+}
+
+.grouppic:hover {
+  opacity: 1; /* Set opacity to 1 on hover */
 }

@@ -8163,7 +8163,7 @@ textarea.form-control-lg {
 
 .bg-pic {
   --bs-bg-opacity: 1;
-  background-color: #fdfdf5 !important;
+  background-color: #fff !important;
 }
 
 
@@ -11350,19 +11350,18 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
 .thingii {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  width: 40vw;
+  height: 60vh;
+  margin: auto;
 }
 
 .grouppic {
   position: relative;
-  width: 50vw;
-  height: 50vh;
+  width: 100%; /* Occupy full width of .thingii */
+  height: 100%; /* Occupy full height of .thingii */
   background-image: url('../assets/img/grouppic.jpeg');
-  background-size: contain; /* Adjusted to contain */
+  background-size: cover; /* Maximize image size to cover container */
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-position: center; /* Center the background */
   opacity: 1; /* Set initial opacity to 1 */
@@ -11377,8 +11376,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 100%;
   height: 100%;
   background-image: url('../assets/img/funnypic.jpg');
-  background-size: cover;
-  background-size: contain; /* Adjusted to contain */
+  background-size: cover; /* Maximize image size to cover container */
   background-repeat: no-repeat; /* Prevent image from repeating */
   background-position: center; /* Center the background */
   opacity: 0;
@@ -11391,4 +11389,71 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .grouppic:hover {
   opacity: 1; /* Set opacity to 1 on hover */
+}
+
+@media screen and (min-width: 1701px) {
+  .thingii {
+    width: 60vw; /* Increase width for larger screens */
+    height: 60vh; /* Decrease height for larger screens */
+    margin: auto; /* Adjust margin for larger screens */
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  /* Reset to default styles */
+  .thingii {
+    width: 40vw;
+    height: 35vh;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  /* Reset to default styles */
+  .thingii {
+    width: 30vw;
+    height: 35vh;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1550px) {
+  /* Reset to default styles */
+  .thingii {
+    width: 45vw;
+    height: 35vh;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  /* Reset to default styles */
+  .thingii {
+    width: 75vw;
+    height: 50vh;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 980px) {
+  /* Reset to default styles */
+  .thingii {
+    width: 65vw;
+    height: 35vh;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .thingii {
+    width: 75vw; /* Decrease width for smaller screens */
+    height: 30vh; /* Increase height for smaller screens */
+    margin: auto; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .thingii {
+    width: 90vw; /* Further decrease width for even smaller screens */
+    height: 20vh; /* Further increase height for even smaller screens */
+    margin: auto; /* Adjust margin for even smaller screens */
+  }
 }
